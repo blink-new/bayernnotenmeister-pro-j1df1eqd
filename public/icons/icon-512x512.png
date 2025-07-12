@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad1)" stroke="#1e40af" stroke-width="8"/>
+  
+  <!-- Graduation Cap -->
+  <g transform="translate(256,256)">
+    <!-- Cap Base -->
+    <ellipse cx="0" cy="-20" rx="120" ry="40" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Cap Board -->
+    <rect x="-100" y="-60" width="200" height="20" rx="10" fill="#ffffff"/>
+    
+    <!-- Tassel -->
+    <line x1="80" y1="-50" x2="90" y2="-30" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="90" cy="-25" r="8" fill="#fbbf24"/>
+    
+    <!-- Bavarian Pattern -->
+    <g opacity="0.3">
+      <rect x="-80" y="20" width="20" height="20" fill="#ffffff"/>
+      <rect x="-40" y="20" width="20" height="20" fill="#3b82f6"/>
+      <rect x="0" y="20" width="20" height="20" fill="#ffffff"/>
+      <rect x="40" y="20" width="20" height="20" fill="#3b82f6"/>
+      <rect x="-60" y="40" width="20" height="20" fill="#3b82f6"/>
+      <rect x="-20" y="40" width="20" height="20" fill="#ffffff"/>
+      <rect x="20" y="40" width="20" height="20" fill="#3b82f6"/>
+      <rect x="60" y="40" width="20" height="20" fill="#ffffff"/>
+    </g>
+    
+    <!-- Grade Symbol -->
+    <text x="0" y="80" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="60" font-weight="bold">1+</text>
+  </g>
+</svg>

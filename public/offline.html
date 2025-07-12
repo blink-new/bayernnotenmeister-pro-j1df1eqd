@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Bayernnotenmeister Pro</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      max-width: 400px;
+      padding: 2rem;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    p {
+      opacity: 0.9;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .retry-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .retry-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    .features {
+      margin-top: 2rem;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .features h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    .features li {
+      margin-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📚</div>
+    <h1>Du bist offline</h1>
+    <p>Keine Internetverbindung gefunden. Die App funktioniert auch offline mit deinen gespeicherten Daten!</p>
+    
+    <button class="retry-btn" onclick="window.location.reload()">
+      Erneut versuchen
+    </button>
+    
+    <div class="features">
+      <h3>🚀 Offline verfügbar:</h3>
+      <ul>
+        <li>Noten eintragen und bearbeiten</li>
+        <li>Berechnungen durchführen</li>
+        <li>Übersichten anzeigen</li>
+        <li>Daten werden automatisch synchronisiert</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Auto-retry connection every 30 seconds
+    setTimeout(() => {
+      window.location.reload();
+    }, 30000);
+  </script>
+</body>
+</html>
